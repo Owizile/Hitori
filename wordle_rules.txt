@@ -1,0 +1,13 @@
+```ansi
+Guess the WORDLE in 6 tries.
+Each guess must be a valid 5 letter word.
+After each guess, the color of the tiles will change to show how close your guess was to the word.
+
+Examples:
+[32mW[30;1mEARY[0m
+The letter W is in the word and in the correct spot.
+[30;1mP[33;3mI[30;1mLLS[0m
+The letter I is in the word but in the wrong spot.
+[30;1mVAGUE[0m
+The gray letters are not in the word in any spot.
+```
