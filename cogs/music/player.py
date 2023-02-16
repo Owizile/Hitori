@@ -69,6 +69,7 @@ class Music(commands.Cog):
             return await ctx.voice_client.move_to(channel)
 
         await channel.connect()
+        await ctx.send("Bot joined the channel")
 
     @commands.hybrid_command(
         name = "play",
@@ -90,6 +91,7 @@ class Music(commands.Cog):
     async def stop(self, ctx: commands.Context):
 
         await ctx.voice_client.disconnect()
+        await ctx.send("Bot disconected from channel")
 
     @play.before_invoke
     async def ensure_voice(self, ctx: commands.Context):
